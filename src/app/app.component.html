@@ -2,15 +2,19 @@
   <img src="/assets/gift.gif" />
 </div>
 
+<div id="open" class="gift" *ngIf="isOpen">
+  <img src="/assets/open1.gif" />
+</div>
+
 <div class="open" *ngIf="isOpen">
   <img
     *ngIf="!isMobile"
     style="z-index: -1; position: absolute;"
-    width="100%"
+    width="120%"
     height="100%"
     src="/assets/wallpaper.jpg"
   />
   <img *ngIf="isMobile" style="z-index: -1; position: absolute;" width="100%" height="100%" src="/assets/mobile.jpeg" />
-  <img style="z-index: -1; position: absolute; margin-top: 5%; margin-left: 60%;" width="15%" height="30%" src="/assets/tickets.png" />
+  <img style="z-index: -1; position: absolute; margin-top: 5%; margin-left: 65%;" width="18%" height="30%" src="/assets/tickets.png" />
 </div>
 

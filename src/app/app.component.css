@@ -9,10 +9,15 @@
 
 .open {
   border-style: none;
-  animation: fadeIn 30s;
+  animation: fadeIn 20s;
 }
 
 @keyframes fadeIn {
   0% { opacity: 0; }
-  100% { opacity: 5; }
+  95% { opacity: 10000; }
+  96% { opacity: 10000; }
+  97% { opacity: 10000; }
+  98% { opacity: 10000; }
+  99% { opacity: 10000; }
+  100% { opacity: 10000; }
 }

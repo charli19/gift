@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
-
   public isOpen: boolean = false;
+  public isHidden: boolean = false;
   public isMobile: boolean = false;
 
   ngOnInit(): void {
@@ -19,8 +19,16 @@ export class AppComponent implements OnInit {
   }
 
   openGift(): void {
-    this.isOpen = true;
     const audio = new Audio('assets/super3.mp3');
     audio.play();
+    setInterval(() => {
+      this.isOpen = true;
+    }, 500);
+    setInterval(() => {
+      var el = document.getElementById('open');
+      if (el) {
+        el.style.display = 'none';
+      }
+    }, 1500);
   }
 }
