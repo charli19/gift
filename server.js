@@ -4,10 +4,10 @@ const app = express();
 
 app.disable("x-powered-by");
 
-app.use(express.static(__dirname + "/dist/mediadordigital-front/browser"));
+app.use(express.static(__dirname + "/dist/gift/browser"));
 
 app.get("/*", function (req, res) {
-    res.sendFile(path.join(__dirname + "/dist/mediadordigital-front/browser/index.html"));
+    res.sendFile(path.join(__dirname + "/dist/gift/browser/index.html"));
 });
 
 app.listen(process.env.PORT || 4200);
