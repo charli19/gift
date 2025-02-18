@@ -1,0 +1,15 @@
+export const environment = {
+    production: false,
+    baseUrl: 'http://localhost:4200',
+    apiUrl: 'http://localhost:8085',
+    authServerUrl: 'http://localhost:8080',
+    logoutUrl: 'http://localhost:8080/logout',
+    responseType: 'code',
+    clientId: 'angular-mediator-client',
+    clientSecret: 'angular-mediator-secret',
+    grantType: 'authorization_code',
+    redirectUri: 'http://localhost:4200/callback',
+    authorizationEndpoint: '/oauth2/authorize',
+    tokenEndpoint: '/oauth2/token',
+    scope: 'openid',
+};
