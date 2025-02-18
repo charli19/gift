@@ -1,0 +1,22 @@
+<div class="container">
+    <full-calendar [options]="calendarOptions">
+        <ng-template #eventContent let-arg>
+            <div>
+                <b>{{ arg.event.start | date: 'shortTime' }} - {{ arg.event.end | date: 'shortTime' }}</b>
+            </div>
+            <div>
+                <i>{{ arg.event.title }}</i>
+            </div>
+        </ng-template>
+    </full-calendar>
+
+    <div *ngIf="selectedEventDetails">
+        <h2>Detalles del Evento</h2>
+        <p><strong>Título:</strong> {{ selectedEventDetails.title }}</p>
+        <p><strong>Hora de inicio:</strong> {{ selectedEventDetails.start | date: 'short' }}</p>
+        <p><strong>Hora de fin:</strong> {{ selectedEventDetails.end | date: 'short' }}</p>
+        <p><strong>Descripción:</strong> {{ selectedEventDetails.description }}</p>
+        <p><strong>Ubicación:</strong> {{ selectedEventDetails.location }}</p>
+        <p><strong>Participantes:</strong> {{ selectedEventDetails.participants }}</p>
+    </div>
+</div>
