@@ -5,7 +5,10 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build-prod": "ng build --configuration production",
+    "build-stage": "ng build --configuration stage",
     "watch": "ng build --watch --configuration development",
+    "start-server": "node server.js",
     "test": "ng test"
   },
   "private": true,
